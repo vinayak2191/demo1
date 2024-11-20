@@ -19,3 +19,19 @@ p {
     line-height: 1.6;
     font-size: 18px;
 }
+/* Add this to your existing styles.css */
+.linkedin-button {
+    display: inline-block;
+    background-color: #0077b5;  /* LinkedIn's brand color */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.linkedin-button:hover {
+    background-color: #006396;
+    transition: background-color 0.3s ease;
+}
