@@ -34,28 +34,6 @@ p {
     background-color: #006396;
     transition: background-color 0.3s ease;
 }
-
-/* Add to styles.css */
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: #333;
-    padding: 1rem;
-}
-
-.navbar ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.navbar a {
-    color: white;
-    text-decoration: none;
-}
-
 .profile-photo {
     width: 200px;
     height: 200px;
@@ -63,50 +41,4 @@ p {
     object-fit: cover;
     margin: 2rem auto;
     display: block;
-}
-
-
-
-
-
-
-@media (max-width: 768px) {
-    .navbar ul {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-/* Add to styles.css */
-body.loading {
-    opacity: 0;
-}
-
-.loading-spinner {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    border: 3px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 3px solid #0077b5;
-    animation: spin 1s linear infinite;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-/* For lazy loaded images */
-img[data-src] {
-    opacity: 0;
-    transition: opacity 0.3s ease-in;
-}
-
-img {
-    opacity: 1;
-    transition: opacity 0.3s ease-in;
 }
