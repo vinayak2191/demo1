@@ -1,4 +1,3 @@
-// script.js
 document.addEventListener('DOMContentLoaded', function() {
     // Get the heading element
     const heading = document.querySelector('h1');
