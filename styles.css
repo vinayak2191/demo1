@@ -34,3 +34,68 @@ p {
     background-color: #006396;
     transition: background-color 0.3s ease;
 }
+
+/* Add to styles.css */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #333;
+    padding: 1rem;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 2rem auto;
+    display: block;
+}
+
+.skill-bar {
+    margin: 20px 0;
+}
+
+.skill-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.skill-progress {
+    height: 20px;
+    background: #ddd;
+    position: relative;
+    border-radius: 5px;
+}
+
+.skill-progress::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: #0077b5;
+    width: 0;
+    border-radius: 5px;
+    transition: width 1.5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
